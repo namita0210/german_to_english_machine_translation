@@ -7,6 +7,9 @@
   <li>5. Ultimately - we get a pattern like this : [ ['hi' 'halo' ] , ['good morning' 'Guten Morgen'] ]</li>
   <li>6. Clean the text - line wise - then phrase wise - removing non printable characters, punctuation etc</li>
   <li>7. Save the cleaned text as a pkl file</li>
+  <li>8. Load the pkl file - split into train, test set and save those sets as pkl file</li>
+  <li>9. Load the train test pkl files</li>
+  <li>10. Tokenize the data with keras</li>
   
 </ul>
 
