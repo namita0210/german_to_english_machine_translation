@@ -5,5 +5,8 @@
   <li>3. Then the loaded file must be split by lines</li>
   <li> 4. The lines need to split by tab</li>
   <li>5. Ultimately - we get a pattern like this : [ ['hi' 'halo' ] , ['good morning' 'Guten Morgen'] ]</li>
+  <li>6. Clean the text - line wise - then phrase wise - removing non printable characters, punctuation etc</li>
+  <li>7. Save the cleaned text as a pkl file</li>
+  
 </ul>
 
