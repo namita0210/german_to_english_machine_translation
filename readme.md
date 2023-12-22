@@ -9,7 +9,9 @@
   <li>7. Save the cleaned text as a pkl file</li>
   <li>8. Load the pkl file - split into train, test set and save those sets as pkl file</li>
   <li>9. Load the train test pkl files</li>
-  <li>10. Tokenize the data with keras</li>
-  
+  <li>10. Tokenize the data with keras</li>  
 </ul>
+<p>The tokenization needs to be done separately for both the english vocab and german vocab - in which all words are to be mapped with integers.
+But I think due to the pkl file there is some problem differentiating between the columns - 0 and 1 . 
+0 : English and 1: German respectively. So in this branch I am going to omit the step of saving a pkl file and directly tokenize the cleaned text.</p>
 
