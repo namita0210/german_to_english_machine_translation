@@ -15,3 +15,5 @@
 But I think due to the pkl file there is some problem differentiating between the columns - 0 and 1 . 
 0 : English and 1: German respectively. So in this branch I am going to omit the step of saving a pkl file and directly tokenize the cleaned text.</p>
 
+<p>It turns out that there was a slight error in the clean function which was causing the output to be a single word without any spaces and that led to there being a single column which caused problem in the tokenization for both languages - with the assumption that they falled in different columns. Now that is resolved and the pkl files are removed - so the tokenization is happening without error and if the pkl files are retained in the main branch and clean function is fixed then that code will also work fine.</p>
+
