@@ -14,3 +14,7 @@
 </ul>
 <i>Removed the existing pkl files - after discovering the error in clean function - pkl files would have been affected and must be having wrong data</i>
 
+<li>Discovered the error in the clean function , brought back the pkl file. The next step after cleaning and splitting is to tokenize</li>
+
+<p><b>Tokenize:</b> Tokenizer is responsible to map words to unique integer values. In this method the tokenizer creates and returns token objects instead of integer encoding. The tokenizer object is then added as a parameter in another method to create and pad the length of the integer encoded sequence.</p>
+
