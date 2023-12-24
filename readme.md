@@ -27,3 +27,5 @@ Every unique integer that is representing a token is replaced by a dense vector 
 
 All in all - word embedding layer does not take raw text or integer values as input - It takes a sequence of integers as an input which represent tokens of a text and then converts that sequence of integers into a dense vector representation.</p>
 
+<p><b>NOTE: <i>There was a slight oversight. This tutorial is not using a word embedding layer. It is just tokenizing and padding the text and then instead of passing it to a word embedding layer, it is being passed to a one hot encoding method - to get vector representation - although sparse but still those vector representation would be passed into the neural network as input.</i></b></p>
+
