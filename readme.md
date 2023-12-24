@@ -56,3 +56,12 @@ During training, the model uses the input-output pairs (trainX and trainY) to le
 
 The code provided (model.fit(trainX, trainY, ...)) aims to train the model using this input-output data pair, allowing the model to learn the mapping from input sequences to sparse vector representations of the output sequences. This process enables the model to generate suitable predictions for unseen input sequences during inference.</p>
 
+<li> Save the best performing model for inference</li>
+
+<li>Load the cleaned dataset as before</li>
+<li>The best model saved during training must be loaded</li>
+<li>fit the model and get prediction</li>
+<li>A translate function to retrieve a word from a keras tokenizer</li>
+<li>Overall, the next function serves to take a source sequence, predict its corresponding target sequence using a neural network model, and return the generated sequence as text.</li>
+
+
