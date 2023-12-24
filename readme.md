@@ -29,3 +29,15 @@ All in all - word embedding layer does not take raw text or integer values as in
 
 <p><b>NOTE: <i>There was a slight oversight. This tutorial is not using a word embedding layer. It is just tokenizing and padding the text and then instead of passing it to a word embedding layer, it is being passed to a one hot encoding method - to get vector representation - although sparse but still those vector representation would be passed into the neural network as input.</i></b></p>
 
+<h5>Passing input to the model - encoder decoder architecture of LSTM </h5>
+<p>
+  <li>LSTM is a recurrent neural network which is popularly used for sequential data - mainly for NLP tasks</li>
+  <li>In an encoder the input is given in the form of a sequence of integers. Encoder processes the input and then gives an output - context vector</li>
+  A context vector is similar to a dense vector representation as it is also of a fixed length and describes the information from the entire sequence of data.
+  <li>The context vector is passed as an input to the decoder which gives a sequence of elements as an output</li>
+  Decoder generates output sequence by predicting one element at a time. During the training the output sequence from the decoder is compared to the target sequence to compute the losss, allowing the model to learn from errors and improve predictions.
+  During inference (generating predictions on new data) the decoder generates the output sequence based on the learned parameters.
+</p>
+
+<p><b>Output of decoders: </b>  Often in the form of probabilities across the vocabulary. Each position in the output sequence could have a probability distibution over the vocabulary.</p>
+
