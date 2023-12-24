@@ -20,3 +20,10 @@
 
 <p><b>Encode method</b>: After the input is encoded and padding is done, this process is followed by another method which integer encodes the output into one hot encoding and then reshapes the output in the structure of it's input sequence.</p>
 
+<h3> THEORETICAL INFORMATION - WHY ONE HOT ENCODING WAS UNNECESSARY</h3>
+<p>The tokenizer from keras created a tokenizer object which takes in textual data and then maps it to a unique integer and the padding ensures that the size remains constant.
+Now, the tokenizer maps each token to a unique integer and if we look at the text as a whole - into tokens - converted into unique integers - we get a sequence of integers.So, this sequence of integers is taken as an input by the word embedding layer which in turn converts this sequence of integers into a dense vector representation.
+Every unique integer that is representing a token is replaced by a dense vector embedding.
+
+All in all - word embedding layer does not take raw text or integer values as input - It takes a sequence of integers as an input which represent tokens of a text and then converts that sequence of integers into a dense vector representation.</p>
+
