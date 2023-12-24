@@ -41,3 +41,18 @@ All in all - word embedding layer does not take raw text or integer values as in
 
 <p><b>Output of decoders: </b>  Often in the form of probabilities across the vocabulary. Each position in the output sequence could have a probability distibution over the vocabulary.</p>
 
+<h5>UNDERSTANDING THE MODEL PARAMETERS AND THEIR SIGNIFICANCE</h5>
+<p> In many sequence-to-sequence tasks, like language translation or sequence generation, trainX often represents input sequences as sequences of integers (tokenized or encoded input data), while trainY consists of sequences of sparse vectors, typically in a one-hot encoded format representing the target sequences.
+
+trainX: Sequence of integers representing the input data.
+trainY: Sequence of sparse vectors, often one-hot encoded representations of the target data.
+The usage of these different formats for trainX and trainY aligns with the requirements of sequence-to-sequence models.
+
+Input Sequence (trainX): Sequence of integers representing words or tokens in the input language. These integers often correspond to indices in a vocabulary or have been encoded using tokenization methods.
+
+Target Sequence (trainY): Sequence of sparse vectors representing the target output. In natural language processing tasks, these sparse vectors often use one-hot encoding, where each vector represents a word/token in the target language vocabulary.
+
+During training, the model uses the input-output pairs (trainX and trainY) to learn how to map input sequences to output sequences, adjusting its parameters (weights) to minimize the difference between predicted outputs and actual target outputs.
+
+The code provided (model.fit(trainX, trainY, ...)) aims to train the model using this input-output data pair, allowing the model to learn the mapping from input sequences to sparse vector representations of the output sequences. This process enables the model to generate suitable predictions for unseen input sequences during inference.</p>
+
