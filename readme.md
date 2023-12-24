@@ -18,3 +18,5 @@
 
 <p><b>Tokenize:</b> Tokenizer is responsible to map words to unique integer values. In this method the tokenizer creates and returns token objects instead of integer encoding. The tokenizer object is then added as a parameter in another method to create and pad the length of the integer encoded sequence.</p>
 
+<p><b>Encode method</b>: After the input is encoded and padding is done, this process is followed by another method which integer encodes the output into one hot encoding and then reshapes the output in the structure of it's input sequence.</p>
+
